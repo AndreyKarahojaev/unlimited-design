@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/fon-top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 700px;
+    padding-bottom: 100px;
+}
+
+.header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 47px;
+    padding-bottom: 55px;
+}
+
+.header__top-logo {
+    width: 197px;
+    height: 53px;
+    // max-width: 100%;
+    // max-height: 100%;
+}
+
+.header__top-phone {
+    font-family: $font-family;
+    font-size: $font-sizeHuge;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: $basic-white;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.header__title {
+    font-family: $font-family;
+    font-size: $font-sizeGiant;
+    line-height: 107px;
+    text-transform: uppercase;
+    color: $basic-white;
+    padding-bottom: 5px;
+}
+
+.header__subtitle {
+    font-family: $font-family;
+    font-size: $font-sizeHuge;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: $basic-white;
+    padding-bottom: 30px;
+}
+
+.header__text {
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: $font-sizeMedium;
+    line-height: 27px;
+    color: $basic-white;
+    padding-bottom: 30px;
+    min-width: 800px;
+}
+
+// .header__link{
+
+// }
+
+.header__social {
+    display: flex;
+    padding-top: 75px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.header__social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-link {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.social-link:hover {
+    transform: scale(1,1.2);
+}
+
+.header__background-car {
+    position: absolute;
+    top: 76%;
+    left: 24%;
+}

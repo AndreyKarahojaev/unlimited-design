@@ -1,0 +1,16 @@
+.page-body {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid green;
+  padding: 10px;
+}
+
+p {
+  color: red;
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */

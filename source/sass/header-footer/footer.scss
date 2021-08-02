@@ -1,0 +1,40 @@
+.footer {
+    background-color: $basic-branded;
+}
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.footer__top-logo {
+
+    width: 197px;
+    height: 53px;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__social-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 300;
+    line-height: 27px;
+    color: $basic-white;
+}
+
+
+
