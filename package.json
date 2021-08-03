@@ -24,6 +24,7 @@
     "jquery": "^3.6.0",
     "node-sass": "^5.0.0",
     "sass": "^1.37.2",
+    "slick-carousel": "^1.8.1",
     "stylelint": "13.6.1"
   },
   "scripts": {
@@ -51,8 +52,7 @@
   },
   "dependencies": {
     "jquery-ui-dist": "^1.12.1",
-    "pug": "^3.0.0",
-    "slick-carousel": "^1.8.1"
+    "pug": "^3.0.0"
   },
   "license": "ISC",
   "description": ""

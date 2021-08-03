@@ -19,9 +19,8 @@ body {
 }
 
 .container{
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 // @media only screen and (min-device-width : $ .*** ) and (max-device-width : $ .*** ) {
@@ -41,42 +40,51 @@ body {
     // Базовые цвета
     $basic-white:#ffffff;
     $basic-black:#000000;
-    $basic-grey: #C4C4C4;
+    $basic-grey: #5B5B5B;
+    $basic-error: #FF1414;
 
 
     //часто используемые цвета
-    $basic-background:#EEEEEE;
-    $basic-specialBlack:#2C2B2B;
-    //центрирование контента
-    
+    $basic-background:#3D3D3D;
+    $basic-specialBlack:#232323;
+    $basic-colormuted: #5B5B5B;
+    $basic-accent: #BC854E;
+    $basic-branded: #D69F67;
+    //доп цвета
+    $basic-backshadow:#404040;
+    $basic-btnhover:#262529;
 
-    //наведение,нажатие и тому подобное
-    // $basic-inputAfter:#333333;
-    // $basic-inputBefore:#F2F2F2;
-    // $basic-inputDown:#D5D5D5;
- 
-    // $basic-mobileBtn:#5A0D67;
-    // $basic-mobileBtnHover:#333333;
 
     // специальные цвета
-    $basic-accent:#5A0D67;
-    $basic-branded:#21062A;
+    $basic-lineSpecial-1:#DEDEDE;
+    $basic-lineSpecial-2:#756656;
+    $basic-lineSpecial-3:#F5CFA7;
+    $basic-lineSpecial-4:#9D8A77;
 
 	//шрифт
-    $font-family: 'Oswald', sans-serif;
+    $font-family: 'Rubik', sans-serif;
 
     $font-sizeSmall: 14px;
-    $font-sizeMedium: 18px;
-    $font-sizeLarge: 24px;
-    $font-sizeHuge: 36px;
-    $font-sizeGiant: 72px;
+    $font-sizeNormal: 18px;
+    $font-sizeMedium: 20px;
+    $font-sizeLarge: 30px;
+    $font-sizeHuge: 33px;
+    $font-sizeGiant: 35px;
+
+    $font-sizeTablet-12: 12px;
+    $font-sizeTablet-15: 15px;
+    $font-sizeTablet-17: 17px;
+    $font-sizeTablet-20: 20px;
+    $font-sizeTablet-22: 22px;
+    $font-sizeTablet-40: 40px;
+
 
 
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
     width: 100%;
 
@@ -95,41 +103,98 @@ body {
     margin: -1px;
 }
 
-// .text-btn {
-//     text-transform: uppercase;
-//     text-align: center;
-//     padding-top: 15px;
-//     font-weight: 300;
-//     font-size: $font-sizeSmall;
-//     line-height: 21px;
-//     color: $basic-white;
-// }
+.text-btn {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 300;
+    font-size: $font-sizeSmall;
+    line-height: 21px;
+    color: $basic-white;
+}
 
-// .button {
-//     display: block;
-//     text-align: center;
-//     width: 250px;
-//     height: 50px;
-//     background-color: $basic-accent;
-// }
+// button NO COLOR, WHIETE and BLACK
+.button {
+    display: block;
+    text-align: center;
+    background-color: $basic-background;
+    border: 2px solid $basic-white;
+    color: $basic-white;
+}
 
-// .button:hover {
-//     background-color: $basic-white;
-//     color: $basic-accent;
-//     transition: all .5s;
-// }
+.button:hover {
+    background-color: $basic-white;
+    color: $basic-background;
+    transition: all .5s;
+}
 
-// .button:active {
-//     background-color: $basic-white;
-//     color: $basic-accent;
-// }
+.button:active {
+    background-color: $basic-white;
+    color: $basic-background;
+}
 
-// .button:disabled {
-//     background-color: $basic-white;
-//     color: $basic-accent;
-// }
+.button:disabled {
+    background-color: $basic-white;
+    color: $basic-background;
+}
 
 
+// button Color Yellow, maybe
+.color-button {
+    display: block;
+    text-align: center;
+    background-color: $basic-branded;
+    color: $basic-white;
+}
+
+.color-button:hover {
+    background-color: $basic-accent;
+    color: $basic-white;
+    transition: all .5s;
+}
+
+.color-button:active {
+    background-color: $basic-accent;
+    color: $basic-white;
+}
+
+.color-button:disabled {
+    background-color: $basic-accent;
+    color: $basic-white;
+}
+
+.btn-input {
+    background-color: $basic-background;
+    border: 2px solid #FFFFFF;
+}
+
+.btn-input:hover {
+    background-color: $basic-background;
+    color: $basic-white;
+    transition: all .5s;
+    border: 2px solid $basic-branded;
+}
+
+.btn-input:active {
+    background-color: $basic-background;
+    color: $basic-white;
+    border: 2px solid $basic-branded;
+}
+
+.btn-input--error {
+    position: relative;
+    background-color: $basic-background;
+    color:$basic-error;
+    border: 2px solid $basic-error;
+}
+
+.btn-input--error::after {
+    position: absolute;
+    content: '!';
+    left: 0;
+    top: 0;
+    color: $basic-error;
+}
 
 
 
