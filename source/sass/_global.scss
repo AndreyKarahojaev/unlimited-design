@@ -5,6 +5,7 @@
 html,
 body {
 	height: 100%;
+    overflow-x: hidden;
 }
 
 .content-wrapper {
@@ -18,7 +19,7 @@ body {
     flex-basis: auto;
 }
 
-.container{
+.container {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -30,9 +31,9 @@ body {
 
     //размеры экрана
     $small:  320px;
-    $medium:  700px;
-    $large:  904px;
-    $huge:  1024px;
+    $medium:  768px;
+    $large:  970px;
+    $huge:  1440px;
     $giant: 1440px;
     $immeasurable: 2560px;
 
@@ -90,7 +91,7 @@ body {
 
     margin: 0 auto;
     // overflow-x: hidden;
-    // background-color: $basic-background;
+    background: linear-gradient(45deg, #5B5B5B, #3D3D3D);
 }
 
 
@@ -145,6 +146,7 @@ body {
     text-align: center;
     background-color: $basic-branded;
     color: $basic-white;
+    border: none;
 }
 
 .color-button:hover {
@@ -163,32 +165,23 @@ body {
     color: $basic-white;
 }
 
-.btn-input {
-    background-color: $basic-background;
-    border: 2px solid #FFFFFF;
-}
 
-.btn-input:hover {
+.btn-text:hover {
     background-color: $basic-background;
     color: $basic-white;
     transition: all .5s;
     border: 2px solid $basic-branded;
 }
 
-.btn-input:active {
-    background-color: $basic-background;
-    color: $basic-white;
-    border: 2px solid $basic-branded;
-}
 
-.btn-input--error {
+.btn-text--error {
     position: relative;
     background-color: $basic-background;
     color:$basic-error;
     border: 2px solid $basic-error;
 }
 
-.btn-input--error::after {
+.btn-text--error::after {
     position: absolute;
     content: '!';
     left: 0;

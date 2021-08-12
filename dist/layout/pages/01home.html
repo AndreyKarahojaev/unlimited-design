@@ -1,17 +1,31 @@
 
 <header class="header">
   <div class="container">
-    <div class="header-top"><a class="header-logo" href=""><img class="header-logo--img" src="img/icon/logo.svg" alt=""/></a>
-      <ul class="header__nav">
-        <li class="header__item"><a class="header-link" href="">Главная</a></li>
-        <li class="header__item"><a class="header-link" href="">Портфолио</a></li>
-        <li class="header__item"><a class="header-link" href="">Пакеты услуг</a></li>
-        <li class="header__item"><a class="header-link" href="">Контакты</a></li>
-      </ul>
-      <button class="header__nav-btn" type="submit"></button>
-    </div>
-    <div class="header-footer"> <a class="button header-btn" href="">заказать звонок</a>
-      <div class="header-footer__links"><a class="header-footer__link" href=""><img src="img/icon/pinterest.svg" alt="media"/></a><a class="header-footer__link" href=""><img src="img/icon/instagram.svg" alt="media"/></a><a class="header-footer__link" href=""><img src="img/icon/telegram.svg" alt="media"/></a><a class="header-footer__link" href=""><img src="img/icon/whatsapp.svg" alt="media"/></a></div>
+    <div class="header__inner"> 
+      <div class="header-content header-content--nav header-content--top header-content--footer"><a class="header-logo" href="">
+          <picture></picture>
+          <source media="(max-width: 768px)" src="img/icon/logo-2.svg" type="image/svg+xml" sizes="100vw"/>
+          <source media="(max-width: 1027px)" src="img/icon/logo-3.svg" type="image/svg+xml" sizes="100vw"/><img class="header-logo__img" src="img/icon/logo.svg" alt=""/></a>
+        <nav class="header-nav">
+          <ul class="header__nav-list">
+            <li class="header__item"><a class="header-link" href="">Главная</a></li>
+            <li class="header__item"><a class="header-link" href="">Портфолио</a></li>
+            <li class="header__item"><a class="header-link" href="">Пакеты услуг</a></li>
+            <li class="header__item"><a class="header-link" href="">Контакты</a></li>
+          </ul>
+          <button class="header-toggle theme-button" type="submit"> </button>
+          <button class="header__contact-us btn-footer btn-footer--closed" type="submit">Связаться с нами</button>
+          <div class="header-footer header-footer--closed"> <a class="button header-footer__btn" href="">заказать звонок</a>
+            <div class="header-footer__links"><a class="header-footer__link" href=""><img src="img/icon/pinterest.svg" alt="media"/></a><a class="header-footer__link" href=""><img src="img/icon/instagram.svg" alt="media"/></a><a class="header-footer__link" href=""><img src="img/icon/telegram.svg" alt="media"/></a><a class="header-footer__link" href=""><img src="img/icon/whatsapp.svg" alt="media"/></a></div>
+          </div>
+        </nav>
+      </div>
+      <div class="header__center"> 
+        <h2 class="header__title">Купили хорошую квартиру? Не портите ее плохим ремонтом!</h2>
+        <p class="header__text">100% реализуемый дизайн-проект от 1500 р/м2</p>
+        <button class="header__btn-order color-button" type="submit">Заказать</button>
+        <button class="header__btn-portfolio button" type="submit">Портфолио</button>
+      </div>
     </div>
   </div>
 </header>

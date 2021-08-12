@@ -1,90 +1,203 @@
-.header-nav {
+
+.header-toggle {
+    display: none;
+}
+
+.header__inner {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
     justify-content: space-between;
-    background-color: $basic-specialBlack;
-    max-height: 600px;
-}
-
-.header-top {
-    display: flex;
-    flex-direction: column;
-    background-color: $basic-specialBlack;
-    color: $basic-white;
-    position: relative;
-}
-
-.header-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: $basic-specialBlack;
-    color: $basic-white;
-}
-
-.header-footer__links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-	align-items: center;
+    background-image: url("../img/header-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 805px;
 }
 
 .header-logo {
     padding-top: 10px;
     padding-bottom: 20px;
     padding-left: 15px;
+    z-index: 10;
 }
 
-.header__nav-btn {
-    border: none;
-    width: 27px;
-    height: 2px;
-    z-index: 2;
-    position: absolute;
-    right: 5%;
-    top: 15px;
-    box-shadow: 0 5px 0 0 $basic-white,
-                0 10px 0 0 $basic-white;
+.header-logo__img {
+    min-width: 75px;
+    min-height: 52px;
+    z-index: 9;
 }
 
-
-
-.header__nav {
+.header-content {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
-.header__item {
-    padding-bottom: 50px;
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 150px;
 }
 
 .header-link {
+    text-align: center;
+    font-size: 16px;
+    line-height: 140%;
     color: $basic-white;
+    padding-left: 35px;
+    padding-right: 35px;
 }
+
 
 .header-footer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    color: $basic-white;
+    position: absolute;
+    top: 80px;
 }
 
-.header-btn {
-    margin-right: 10px;
-}
-
-.button {
-    width: 175px;
-    height: 35px;
-}
 
 .header-footer__links {
     display: flex;
     justify-content: space-around;
+    
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .header-footer__link {
-    padding-left: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 35px;
 }
+
+.header-footer__btn {
+    width: 175px;
+    height: 35px;
+    background-color: transparent;
+}
+
+//Связаться с нами. Открытие и закрытие
+
+.header-content--footer .header-footer--closed   {
+    display: none;
+}
+
+.header-content .btn-footer--open::before {
+    transform: rotate(-36deg);
+}
+
+.header-content .btn-footer--open::after {
+    transform: rotate(36deg);
+}
+
+//Связаться с нами. Открытие и закрытие
+
+.header__contact-us {
+    position: relative;
+    border: none;
+    background-image: none; 
+    background-color: transparent;
+    color: $basic-white;
+}
+
+.btn-footer {
+    padding-right: 40px;
+}
+
+
+.btn-footer::after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 2px;
+    top: 12px;
+    right: -2px;
+    transform: rotate(-36deg);
+    background-color: $basic-white;
+}
+
+.btn-footer::before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 2px;
+    right: 12px;
+    top: 12px;
+    transform: rotate(36deg);
+    background-color: $basic-white;
+    border-radius: 10px;
+}
+
+.header__center {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 18em;
+    margin-left: 9em;
+}
+
+.header__title {
+    width: 100%;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 140%;
+    color: $basic-white;
+}
+
+.header__text {
+    width: 100%;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 140%;
+    color: $basic-white;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.header__btn-order {
+    width: 262px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.header__btn-portfolio {
+    width: 263px;
+    height: 50px;
+}
+
+// .header-top {
+//     display: flex;
+//     justify-content:  space-between;
+//     align-items: center;
+//     position: relative;
+//     background-color: $basic-specialBlack;
+//     max-height: 70px;
+// }
+
+
+// //header-footer
+
+
+
+// .btn {
+//     width: 175px;
+//     height: 35px;
+// }
+
+// .header-btn--close {
+//     display: none;
+// }
+

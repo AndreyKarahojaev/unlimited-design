@@ -1,27 +1,38 @@
 header.header
     .container
-        .header-top
-            a.header-logo(href="")
-                img.header-logo--img(src="img/icon/logo.svg", alt="")
-            ul.header__nav
-                li.header__item
-                    a(href="").header-link Главная
-                li.header__item
-                    a(href="").header-link Портфолио
-                li.header__item
-                    a(href="").header-link Пакеты услуг
-                li.header__item
-                    a(href="").header-link Контакты
-            button(type="submit").header__nav-btn
-        .header-footer 
-            a(href="").button.header-btn заказать звонок
-            .header-footer__links
-                a.header-footer__link(href="")
-                    img(src="img/icon/pinterest.svg", alt="media")
-                a.header-footer__link(href="")
-                    img(src="img/icon/instagram.svg", alt="media")      
-                a.header-footer__link(href="")
-                    img(src="img/icon/telegram.svg", alt="media")
-                a.header-footer__link(href="")
-                    img(src="img/icon/whatsapp.svg", alt="media")
+        .header__inner 
+            .header-content.header-content--nav.header-content--top.header-content--footer
+                a.header-logo(href="")
+                    picture
+                    source(media="(max-width: 768px)" src="img/icon/logo-2.svg", type="image/svg+xml" sizes="100vw")
+                    source(media="(max-width: 1027px)" src="img/icon/logo-3.svg", type="image/svg+xml" sizes="100vw")
+                    img.header-logo__img(src="img/icon/logo.svg", alt="")
+                nav.header-nav
+                    ul.header__nav-list
+                        li.header__item
+                            a(href="").header-link Главная
+                        li.header__item
+                            a(href="").header-link Портфолио
+                        li.header__item
+                            a(href="").header-link Пакеты услуг
+                        li.header__item
+                            a(href="").header-link Контакты
+                    button(type="submit").header-toggle.theme-button 
+                    button(type="submit").header__contact-us.btn-footer.btn-footer--closed Связаться с нами
+                    .header-footer.header-footer--closed 
+                        a(href="").button.header-footer__btn заказать звонок
+                        .header-footer__links
+                            a.header-footer__link(href="")
+                                img(src="img/icon/pinterest.svg", alt="media")
+                            a.header-footer__link(href="")
+                                img(src="img/icon/instagram.svg", alt="media")      
+                            a.header-footer__link(href="")
+                                img(src="img/icon/telegram.svg", alt="media")
+                            a.header-footer__link(href="")
+                                img(src="img/icon/whatsapp.svg", alt="media")
+            .header__center 
+                h2.header__title Купили хорошую квартиру? Не портите ее плохим ремонтом!
+                p.header__text 100% реализуемый дизайн-проект от 1500 р/м2
+                button(type="submit").header__btn-order.color-button Заказать
+                button(type="submit").header__btn-portfolio.button Портфолио
                 
